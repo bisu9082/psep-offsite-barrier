@@ -1,6 +1,6 @@
 # psep-offsite-barrier
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24211474.svg)](https://doi.org/10.5281/zenodo.24211474)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24218123.svg)](https://doi.org/10.5281/zenodo.24218123)
 
 Code and data for: Shin, M., Lee, K., Kang, K. *Off-site mitigation as a time-dependent barrier: lessons from the Fukushima Daiichi spent-fuel-pool injection and the Buncefield tank-farm fire* (submitted to Process Safety and Environmental Protection).
 

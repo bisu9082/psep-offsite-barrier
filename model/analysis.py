@@ -106,7 +106,7 @@ for u in ["U3", "U4"]:
     tt = np.arange(tf(17, 0, 0), T_END_F, DT)
     dem = float(np.sum(boiloff_tpd(decay_MW(UNITS[u]["P0_MW"], tt))) * DT)
     alloc[u] = dict(applied=applied, applied_total=sum(applied.values()), boiloff_17Mar_1Apr=dem,
-                    pool_capacity_above_fuel_t=POOL["h_above_fuel_m"] * POOL["area_m2"] * 0.958)
+                    pool_capacity_above_fuel_t=POOL["h_above_fuel_m"] * POOL["area_m2"] * 1.0)  # upper bound for retention (1 t/m3)
     alloc[u]["max_retainable_t"] = dem + alloc[u]["pool_capacity_above_fuel_t"]
     alloc[u]["min_not_retained_t"] = max(0.0, alloc[u]["applied_total"] - alloc[u]["max_retainable_t"])
 res["allocation"] = alloc

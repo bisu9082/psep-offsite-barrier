@@ -13500,9 +13500,9 @@
    },
    "applied_total": 4833,
    "boiloff_17Mar_1Apr": 313.68972929148754,
-   "pool_capacity_above_fuel_t": 809.95068,
-   "max_retainable_t": 1123.6404092914877,
-   "min_not_retained_t": 3709.3595907085123
+   "pool_capacity_above_fuel_t": 845.46,
+   "max_retainable_t": 1159.1497292914876,
+   "min_not_retained_t": 3673.8502707085127
   },
   "U4": {
    "applied": {
@@ -13513,8 +13513,8 @@
    },
    "applied_total": 1275,
    "boiloff_17Mar_1Apr": 1312.8496077754846,
-   "pool_capacity_above_fuel_t": 809.95068,
-   "max_retainable_t": 2122.800287775485,
+   "pool_capacity_above_fuel_t": 845.46,
+   "max_retainable_t": 2158.3096077754844,
    "min_not_retained_t": 0.0
   }
  },
@@ -13551,11 +13551,11 @@
   {
    "actor": "SDF (shuttle+helo)",
    "persons": 147,
-   "tonnes": 350,
+   "tonnes": 370,
    "coll_lo": 390,
    "coll_hi": 2180,
-   "per_t_lo": 1.1142857142857143,
-   "per_t_hi": 6.228571428571429
+   "per_t_lo": 1.054054054054054,
+   "per_t_hi": 5.891891891891892
   },
   {
    "actor": "Fire (relay)",

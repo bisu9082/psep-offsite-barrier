@@ -156,7 +156,7 @@ def fig5():
     cols = [C["SHUTTLE"], C["RELAY"], C["SHUTTLE"]]
     for i, (r, c) in enumerate(zip(rows, cols)):
         ax.plot([r["per_t_lo"], r["per_t_hi"]], [i, i], color=c, lw=6, solid_capstyle="round")
-        ax.text(r["per_t_hi"] * 1.15, i, f"{r['per_t_lo']:.2g}–{r['per_t_hi']:.2g}", va="center", fontsize=7.5, color=INK)
+        ax.text(r["per_t_hi"] * 1.15, i, f"{r['per_t_lo']:{'.3f' if r['per_t_lo']<0.1 else '.2f'}}–{r['per_t_hi']:.2f}", va="center", fontsize=7.5, color=INK)
     ax.set_yticks(range(len(rows)))
     ax.set_yticklabels([f"{r['actor']}\n{r['persons']} persons, {r['tonnes']:,} t" for r in rows], fontsize=7.5)
     ax.set_xscale("log"); ax.set_xlim(0.03, 20); ax.invert_yaxis()

@@ -65,7 +65,7 @@ SHUTTLE_PF = dict(n_veh=(10, 13), tank_t=(6.0, 8.0), cycles_per_day=(1.0, 2.0))
 # Exposure: binned public dose records (UNSCEAR 2013 Annex A s123, s140-142 & Table 9; RC129-5-1/2/3)
 DOSE_BINS = {
     # actor: (list of (n persons, lo mSv, hi mSv), tonnes delivered by actor, persons)
-    "SDF (shuttle+helo)": ([(132, 0, 10), (3, 10, 20), (8, 20, 50), (4, 50, 100)], 30 + 30 + 40 + 80 + 80 + 90, 147),
+    "SDF (shuttle+helo)": ([(132, 0, 10), (3, 10, 20), (8, 20, 50), (4, 50, 100)], 340 + 30, 147),  # MOD official engine total ~340 t + helicopter 30 t
     "Fire (relay)": ([(1, 29.8, 29.8), (16, 10, 20), (232, 0, 10)], 4227, 249),
     "Police (shuttle)": ([(1, 10, 10), (12, 0, 10)], 44, 13),
 }

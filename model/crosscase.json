@@ -1,0 +1,56 @@
+{
+ "Fukushima Daiichi U4 SFP (2011)": {
+  "t0": "loss of pool cooling, 11 Mar 2011 14:46",
+  "stock_mode": [
+   209.56666666666666,
+   266.51666666666665
+  ],
+  "T_est": 266.51666666666665,
+  "T_d": [
+   250.308,
+   281.28000000000003,
+   318.49199999999996
+  ],
+  "outcome": "fuel not uncovered; P_unc 1.5% (pool-only)",
+  "verdict": "met, margin 0.6 d",
+  "binding": "decision and allocation of a mode able to reach the pool"
+ },
+ "Buncefield tank farm (2005)": {
+  "t0": "explosion, 11 Dec 2005 06:01",
+  "stock_mode": [
+   6.0,
+   26.35
+  ],
+  "T_est": 26.35,
+  "T_d": null,
+  "outcome": "fire under control 73 h, out 102.5 h",
+  "verdict": "delayed; escalation present at t0",
+  "binding": "set-up of a 1.8-1.9 km water relay (>24 h)"
+ },
+ "Arkema Crosby (2017)": {
+  "t0": "site-wide power loss, 28 Aug 2017 02:00",
+  "stock_mode": [
+   -24.0,
+   157.67
+  ],
+  "stranded_cool_loss": [
+   6.0,
+   34.0
+  ],
+  "T_est": null,
+  "T_d": [
+   40.85983351093388,
+   96.68949839402771,
+   215.47384352600037
+  ],
+  "ignitions": [
+   72.0,
+   111.0,
+   111.0
+  ],
+  "controlled_burn": 157.67,
+  "outcome": "3 stranded trailers ignited; 6 burned in a controlled burn",
+  "verdict": "failed; no sustained mode",
+  "binding": "site access and decision lead time for off-site storage (days to weeks)"
+ }
+}

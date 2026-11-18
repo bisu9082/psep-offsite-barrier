@@ -38,7 +38,7 @@ def fig1():
     ax.fill_between(t, 0, np.where(t >= 10.5, 1.25, 0), color=C["FIXED"], alpha=0.25, lw=0)
     ax.plot(t, q, color=INK, lw=1.6, label="Delivered capacity $Q(t)$")
     ax.plot(t, D, color=INK2, lw=1.6, ls="--", label="Demand $D(t)$")
-    for x, lab in [(3.0, "no supply"), (7.25, "SHUTTLE\nstock-limited"), (9.5, "RELAY\nflow-limited"), (12.2, "FIXED /\nremote")]:
+    for x, lab in [(3.0, "no supply"), (7.25, "stock-limited\n(shuttle, reefer)"), (9.5, "flow-limited\n(relay)"), (12.2, "fixed /\nremote")]:
         ax.text(x, 0.12 if x > 4 else 0.45, lab, ha="center", va="bottom", fontsize=7.5, color=INK)
     ax.axvline(8.5, color=INK2, lw=0.8)
     ax.axvline(13.0, color="#e34948", lw=1.2)
@@ -46,9 +46,9 @@ def fig1():
     ax.text(4.25, 1.9, "$T_{est}$: establishment of sustained mode", ha="center", va="bottom", fontsize=7.5, color=INK)
     ax.annotate("", xy=(13.0, 1.55), xytext=(8.5, 1.55), arrowprops=dict(arrowstyle="<->", color=INK2, lw=0.9))
     ax.text(10.75, 1.6, "time margin $T_d - T_{est}$", ha="center", va="bottom", fontsize=7.5, color=INK)
-    ax.text(13.1, 0.5, "deadline $T_d$\n(fuel uncovered /\nescalation)", fontsize=7, color="#b03030", va="bottom")
+    ax.text(13.1, 1.32, "deadline $T_d$\n(critical state:\nSADT, uncovered\nfuel, escalation)", fontsize=7, color="#b03030", va="bottom")
     ax.set_xlim(0, 14.8); ax.set_ylim(0, 2.15)
-    ax.set_xlabel("Time since initiating event (arbitrary units)")
+    ax.set_xlabel("Time since loss of the safety function (arbitrary units)")
     ax.set_ylabel("Rate (normalised to demand)")
     ax.legend(loc="upper left", bbox_to_anchor=(0.0, 0.88), fontsize=7.5)
     ax.grid(False)

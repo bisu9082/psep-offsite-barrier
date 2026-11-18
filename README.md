@@ -1,6 +1,6 @@
 # psep-offsite-barrier
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24218123.svg)](https://doi.org/10.5281/zenodo.24218123)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24341103.svg)](https://doi.org/10.5281/zenodo.24341103)
 
 Code and data for: Shin, M., Lee, K., Kang, K. *Establishment time of off-site mitigation as a barrier property in prolonged loss-of-function accidents: a supply-mode model applied to Buncefield, Arkema Crosby and Fukushima Daiichi* (submitted to Journal of Loss Prevention in the Process Industries).
 
